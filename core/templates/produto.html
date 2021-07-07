@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Produto</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+
+
+</head>
+<body>
+    <h1> Produto </h1:>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Produto </th>
+                <td>Preço </td>
+                <td>Estoque</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="{% url 'index' %}">{{ produto.nome }}</a></td>
+                <th>{{ produto.preco }}</th>
+                <th>{{ produto.estoque }}</th>
+            </tr>
+        </tbody>
+    </table>
+   
+
+</body>
+</html>
