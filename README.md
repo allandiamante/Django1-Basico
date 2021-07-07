@@ -2,4 +2,5 @@
 
 Projeto basico
 
-https://django1-adscrud.herokuapp.com/
+Projeto upado na Heroku
+https://djangoref1-ads.herokuapp.com/
