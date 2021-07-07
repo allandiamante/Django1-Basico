@@ -10,21 +10,21 @@
 
 </head>
 <body>
-    <h1> Produto </h1:>
+    <h1 style="font-size: 10mm;"> Produto {{ produto.pk }}</h1>
 
     <table>
         <thead>
             <tr>
-                <th>Produto </th>
-                <td>Preço </td>
-                <td>Estoque</td>
+                <th>Nome do Produto </th>
+                <th>Preço </th>
+                <th>Estoque</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><a href="{% url 'index' %}">{{ produto.nome }}</a></td>
-                <th>{{ produto.preco }}</th>
-                <th>{{ produto.estoque }}</th>
+                <td><a href="{% url 'index' %}" style="color: #ffff;">{{ produto.nome }}</a></td>
+                <th style="color: #ffff;">{{ produto.preco }}</th>
+                <th style="color: #ffff;"> {{ produto.estoque }}</th>
             </tr>
         </tbody>
     </table>
